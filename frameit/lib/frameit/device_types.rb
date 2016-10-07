@@ -1,6 +1,6 @@
 module Frameit
   module Color
-    BLACK = "SpaceGray"
+    BLACK = "JetBlack"
     SILVER = "Slvr"
   end
 

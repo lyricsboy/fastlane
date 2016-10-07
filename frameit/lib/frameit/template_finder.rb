@@ -18,8 +18,8 @@ module Frameit
     # Example: iPad-Pro-Space-Gray-vertical.png
     class Type2Transform < FilenameTransform
       def transform(color, orientation)
-        fixed_color = color == 'SpaceGray' ? "Space-Gray" : "Silver"
-        fixed_orientation = orientation == 'Horz' ? 'horizontal' : 'vertical'
+        fixed_color = color == Frameit::Color::BLACK ? "Jet-Black" : "Silver"
+        fixed_orientation = orientation == Frameit::Orientation::LANDSCAPE ? 'horizontal' : 'vertical'
         "#{@device_name}-#{fixed_color}-#{fixed_orientation}"
       end
     end
